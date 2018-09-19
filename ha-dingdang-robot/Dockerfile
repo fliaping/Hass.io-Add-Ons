@@ -11,8 +11,7 @@ RUN  apt-get update && apt-get upgrade --yes && \
 RUN git clone https://github.com/dingdang-robot/dingdang-robot.git dingdang && \
   cd dingdang && \
   pip install --upgrade setuptools && \
-  pip install -r client/requirements.txt && \
-  mkdir -p /share/dingdang && cd ..
+  pip install -r client/requirements.txt && cd ..
 
 #安装 Sphinxbase/Pocketsphinx
 RUN apt-get install pocketsphinx --yes && \
@@ -49,5 +48,5 @@ RUN wget http://distfiles.macports.org/openfst/openfst-1.4.1.tar.gz && \
   cd mitlm-0.4.1/ && ./configure && make install && cd .. && \
 #   编译安装 Phonetisaurus
   cd is2013-conversion/phonetisaurus/src && make && \
-  cp ../../bin/phonetisaurus-g2p /usr/local/bin/phonetisaurus-g2p && cd ..
+  cp ../../bin/phonetisaurus-g2p /usr/local/bin/phonetisaurus-g2p && cd ../../../
 
