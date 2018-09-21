@@ -7,7 +7,7 @@
         "aarch64",
         "armhf"
     ],
-    "url": "website with more information about add-on (ie a forum thread for support)",
+    "url": "https://github.com/fliaping/hassio-addons.git",
     "startup": "application",
     "boot": "auto",
     "ports": {
