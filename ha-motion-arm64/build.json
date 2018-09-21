@@ -1,0 +1,11 @@
+{
+    "build_from": {
+        "armhf": "ccrisan/motioneye:master-armhf",
+        "aarch64": "ccrisan/motioneye:master-armhf",
+        "amd64": "ccrisan/motioneye:master-amd64"
+    },
+    "squash": false,
+    "args": {
+        "my_build_arg": "xy"
+    }
+}

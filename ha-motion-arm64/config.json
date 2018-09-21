@@ -1,0 +1,30 @@
+{
+    "name": "motion-eye",
+    "version": "0.1",
+    "slug": "motion-eye",
+    "description": "motion-eye",
+    "arch": [
+        "aarch64",
+        "armhf"
+    ],
+    "url": "website with more information about add-on (ie a forum thread for support)",
+    "startup": "application",
+    "boot": "auto",
+    "ports": {
+        "8765/tcp": 8765
+    },
+    "map": [
+        "config:rw",
+        "ssl",
+        "share:rw",
+        "addons:rw"
+    ],
+    "webui": "http://[HOST]:[PORT:8765]/",
+    "device": [
+        "dev/video0:/dev/video0:rwm"
+    ],
+    "audio": true,
+    "options": {},
+    "schema": {}
+    
+}
