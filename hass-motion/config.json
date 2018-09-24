@@ -5,13 +5,17 @@
     "description": "motion-eye",
     "arch": [
         "aarch64",
-        "armhf"
+        "armhf",
+        "amd64"
     ],
     "url": "https://github.com/fliaping/hassio-addons.git",
     "startup": "application",
     "boot": "auto",
     "ports": {
-        "8765/tcp": 8765
+        "8765/tcp": 8765,
+        "7999/tcp": 7999,
+        "8080/tcp": 8080,
+        "8081/tcp": 8081
     },
     "map": [
         "config:rw",
@@ -20,11 +24,10 @@
         "addons:rw"
     ],
     "webui": "http://[HOST]:[PORT:8765]/",
-    "device": [
-        "dev/video0:/dev/video0:rwm"
+    "devices": [
+        "/dev/video0:/dev/video0:rwm"
     ],
     "audio": true,
     "options": {},
     "schema": {}
-    
 }
