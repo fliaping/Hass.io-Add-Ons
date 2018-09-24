@@ -28,6 +28,6 @@
         "/dev/video0:/dev/video0:rwm"
     ],
     "audio": true,
-    "options": {},
-    "schema": {}
+    "options": null,
+    "schema": null
 }

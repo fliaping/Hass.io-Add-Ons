@@ -14,5 +14,7 @@
     "boot": "auto",
     "map": [
         "config:rw"
-    ]
+    ],
+    "options": null,
+    "schema": null
 }
