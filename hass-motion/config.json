@@ -25,8 +25,8 @@
     ],
     "webui": "http://[HOST]:[PORT:8765]/",
     "devices": [
-        "/dev/disk:/dev/disk:rwm",
-        "/dev/v4l:/dev/v4l:rwm"
+        "/dev/video0:/dev/video0:rwm",
+        "/dev/sda1:/dev/sda1:rwm"
     ],
     "audio": true,
     "options": {
