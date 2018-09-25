@@ -5,7 +5,5 @@
         "amd64": "ccrisan/motioneye:master-amd64"
     },
     "squash": false,
-    "args": {
-        "TIMEZONE": "Asia/Shanghai"
-    }
+    "args": {}
 }

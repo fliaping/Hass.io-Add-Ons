@@ -8,7 +8,7 @@ LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|aarch64
 ENV LANG C.UTF-8
 
 COPY run.sh /
-RUN chmod a+x /run.sh && date && export TZ=":/usr/share/zoneinfo/"$TIMEZONE && date
+RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
 

@@ -28,6 +28,10 @@
         "/dev/video0:/dev/video0:rwm"
     ],
     "audio": true,
-    "options": {},
-    "schema": {}
+    "options": {
+        "timezone": "Asia/Shanghai"
+    },
+    "schema": {
+        "timezone": "str"
+    }
 }
