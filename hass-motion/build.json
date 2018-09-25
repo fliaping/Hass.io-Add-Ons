@@ -6,6 +6,6 @@
     },
     "squash": false,
     "args": {
-        "my_build_arg": "xy"
+        "TIMEZONE": "Asia/Shanghai"
     }
 }

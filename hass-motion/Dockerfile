@@ -1,11 +1,14 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+ARG TIMEZONE
+
 LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|aarch64|amd64"
+
 ENV LANG C.UTF-8
 
 COPY run.sh /
-RUN chmod a+x /run.sh
+RUN chmod a+x /run.sh && date && export TZ=":/usr/share/zoneinfo/"$TIMEZONE && date
 
 CMD [ "/run.sh" ]
 
