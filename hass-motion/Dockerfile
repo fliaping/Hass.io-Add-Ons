@@ -1,14 +1,12 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-ARG TIMEZONE
-
 LABEL io.hass.version="VERSION" io.hass.type="addon" io.hass.arch="armhf|aarch64|amd64"
 
 ENV LANG C.UTF-8
 
 COPY run.sh /
-RUN chmod a+x /run.sh
+RUN apt-get update && apt-get install jq --yes && chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
 

@@ -24,13 +24,9 @@
         "addons:rw"
     ],
     "webui": "http://[HOST]:[PORT:8765]/",
-    "full_access": true,
+    "apparmor": false,
     "privileged": [
-        "NET_ADMIN",
-        "SYS_ADMIN",
-        "SYS_RAWIO",
-        "SYS_TIME",
-        "SYS_NICE"
+        "SYS_ADMIN"
     ],
     "devices": [
         "/dev/video0:/dev/video0:rwm",

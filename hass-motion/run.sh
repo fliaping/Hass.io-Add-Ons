@@ -5,7 +5,6 @@ TIMEZONE=$(jq --raw-output ".timezone" $CONFIG_PATH)
 
 date && export TZ=":/usr/share/zoneinfo/"$TIMEZONE && date
 
-ls /dev/
 mount /dev/sda1 /share/disk/data
 
 mkdir -p /config/motioneye/
