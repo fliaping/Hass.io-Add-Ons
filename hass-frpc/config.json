@@ -15,6 +15,10 @@
     "map": [
         "config:rw"
     ],
-    "options": {},
-    "schema": {}
+    "options": {
+        "config_file": "/config/frp/frpc.ini"
+    },
+    "schema": {
+        "config_file": "str"
+    }
 }

@@ -1,7 +1,6 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-
 ARG BUILD_ARCH
 
 ARG FRP_VERSION="0.21.0"
@@ -14,8 +13,7 @@ COPY run.sh /
 RUN chmod a+x /run.sh
 
 
-
-RUN apk add --no-cache wget && \
+RUN apk add --no-cache wget jq && \
     if [ $BUILD_ARCH = "aarch64" ] ; then ARCH="arm64"; \
     elif [ $BUILD_ARCH = "armhf" ] ; then ARCH="arm"; \
     elif [ $BUILD_ARCH = "i386" ] ; then ARCH="386"; \
